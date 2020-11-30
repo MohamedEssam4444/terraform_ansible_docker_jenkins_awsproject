@@ -25,8 +25,7 @@ pipeline {
       }
     }
     stage('deploy docker container to webserver using ssh') {
-      steps {
-        script {        
+      steps {    
           withCredentials([sshUserPrivateKey(
                     credentialsId: 'b8754ead-af36-4de8-b252-1070ae83cac4',
                     keyFileVariable: 'KEY_FILE')]) {
@@ -39,4 +38,3 @@ pipeline {
          }
     }
   }
- }
