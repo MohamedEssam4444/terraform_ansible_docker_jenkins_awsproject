@@ -28,8 +28,8 @@ pipeline {
       steps {
         script {
                     
-                 sh """ssh -tt ubuntu@172.31.5.96 << EOF 
-                 sudo docker run -dit --name sidyali -p 8000:8000 sidiali/python_repo:pythonapp
+                 sh """ssh -tt ubuntu@172.31.5.96 -o StrictHostKeyChecking=no'<< EOF 
+                 sudo docker run -dit --name sidiali -p 8000:8000 sidiali/python_repo:pythonapp
                  exit
                  EOF"""  
                }
