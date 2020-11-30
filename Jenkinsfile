@@ -27,7 +27,9 @@ pipeline {
     stage('deploy docker container to webserver using ssh') {
       steps {
         script {        
-          sshagent(credentials : ['jenkins-pem']) {
+          withCredentials([sshUserPrivateKey(
+                    credentialsId: '<ID>',
+                    keyFileVariable: 'KEY_FILE')]) {
                  sh """ssh -tt ubuntu@172.31.5.96 -o StrictHostKeyChecking=no<< EOF 
                  sudo docker run -dit --name sidiali -p 8000:8000 sidiali/python_repo:pythonapp
                  exit
