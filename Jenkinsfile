@@ -28,7 +28,7 @@ pipeline {
       steps {
         script {        
           withCredentials([sshUserPrivateKey(
-                    credentialsId: '<ID>',
+                    credentialsId: 'b8754ead-af36-4de8-b252-1070ae83cac4',
                     keyFileVariable: 'KEY_FILE')]) {
                  sh """ssh -tt ubuntu@172.31.5.96 -o StrictHostKeyChecking=no<< EOF 
                  sudo docker run -dit --name sidiali -p 8000:8000 sidiali/python_repo:pythonapp
