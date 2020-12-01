@@ -1,6 +1,9 @@
 # terraform_ansible_docker_jenkins_awsproject
 using terraform to deploy 2 instances on aws and configuring them using ansible one to be used as jenkins and the other as webserver , then connecting jenkins to the webserver using ssh and deploying to it a docker container exposing a python application
 
+
+![aws infra soln](https://user-images.githubusercontent.com/68178003/100707934-24d4fc80-33b4-11eb-9aeb-d7a9590a6cf6.png)
+
 after applying terraform :
 
 ![Screenshot from 2020-11-30 11-27-09](https://user-images.githubusercontent.com/68178003/100592489-d6febc80-32ff-11eb-9538-af04d2a1e5f5.png)
