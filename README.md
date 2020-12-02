@@ -1,7 +1,7 @@
 # terraform_ansible_docker_jenkins_awsproject
 
 ## Archeticture :
-![aws infra soln](https://user-images.githubusercontent.com/68178003/100707934-24d4fc80-33b4-11eb-9aeb-d7a9590a6cf6.png)
+![aws infra soln (1)](https://user-images.githubusercontent.com/68178003/100848077-510e7d00-3489-11eb-9603-805b5cf6b78f.jpeg)
 
 ## Scenario :
 * Using terraform to deploy 2 instances on AWS
