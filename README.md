@@ -28,7 +28,7 @@
 
 ![Screenshot from 2020-11-30 12-06-09](https://user-images.githubusercontent.com/68178003/100596169-876ebf80-3304-11eb-8640-dc10bb59b472.png)
 
-5. connection between jenkins to web instance to deploy docker app after building and deploying image using jenkinsfile :
+5. connection between jenkins to web instance to deploy docker app after building and pushing image to dockerhub using jenkinsfile :
 
 ![Screenshot from 2020-11-30 11-26-35](https://user-images.githubusercontent.com/68178003/100592481-d36b3580-32ff-11eb-8b14-3a5b4038ad9b.png)
 
