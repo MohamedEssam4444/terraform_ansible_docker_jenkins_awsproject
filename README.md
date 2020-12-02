@@ -8,7 +8,7 @@
 * configuring them using ansible one to be used as jenkins and the other as webserver
 * connecting jenkins to the webserver using ssh and deploying to it a docker container exposing a python application
 
-** Proven steps:
+### Proven steps:
 
 1. after applying terraform :
 
